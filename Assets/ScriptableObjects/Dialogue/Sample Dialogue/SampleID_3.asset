@@ -18,5 +18,5 @@ MonoBehaviour:
   CharacterDialogue: What should I do...
   options:
   - OptionText: Set
-    connectingDialogueID: SampleID_3
+    connectingDialogueID: SampleID_1
   nextDialogueLine: 
