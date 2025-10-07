@@ -1,0 +1,4 @@
+DialogueID	CharacterName	CharacterEmotion	CharacterDialogue	Next Dialogue (ID)	Option Texts	Connects To ID
+SampleID_1	JobertPandecoco	Happy	nc set			
+SampleID_2	HubertPandecoco	Anger	no bump >:(			
+SampleID_3	HubertPandecoco		What should I do...		Set	SampleID_3
