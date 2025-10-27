@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0fb4503b4b50fcf47bb3521551ecb3df, type: 3}
-  m_Name: SampleID_2
+  m_Name: SampleID_4
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  DialogueID: SampleID_2
-  CharacterName: JobertPandecoco
-  CharacterEmotion: Anger
-  CharacterDialogue: no bump >:(
+  DialogueID: SampleID_4
+  CharacterName: HubertPandecoco
+  CharacterEmotion: Surprise
+  CharacterDialogue: HUH I swear I got that tf
   options: []
   nextDialogueLine: 

@@ -8,6 +8,8 @@ using System.Collections.Generic;
 
 public class NewDialogue : EditorWindow
 {
+    Vector2 scrollPos;
+
     private string fileName = "";
     private string dialogueID = "";
     private string speakerName = "";
@@ -28,12 +30,14 @@ public class NewDialogue : EditorWindow
 
     void OnGUI()
     {
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+
         EditorGUILayout.LabelField("New Dialogue Data", EditorStyles.boldLabel);
         EditorGUILayout.Space();
 
         dialogueID = EditorGUILayout.TextField("Dialogue ID: ", dialogueID);
         speakerName = EditorGUILayout.TextField("Character Name: ", speakerName);
-        speakerEmotion = EditorGUILayout.TextField(new GUIContent("Character Emotion: ","e.g., Happy, Sad, Anger, Fear, Disgust, or Surprise (Temporary)"), speakerEmotion);
+        speakerEmotion = EditorGUILayout.TextField(new GUIContent("Character Emotion: ","e.g., Happy, Sad, Anger, Fear, Disgust, Confused, or Surprise (Temporary)"), speakerEmotion);
 
         EditorGUILayout.LabelField("Dialogue Line:");
         speakerDialogue = EditorGUILayout.TextArea(speakerDialogue, GUILayout.Height(40));
@@ -91,6 +95,8 @@ public class NewDialogue : EditorWindow
         {
             CreateNewDialogue();
         }
+
+        EditorGUILayout.EndScrollView();
     }
 
     void CreateNewDialogue()

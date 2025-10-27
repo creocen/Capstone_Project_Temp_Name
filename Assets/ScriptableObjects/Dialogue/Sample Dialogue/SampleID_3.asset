@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
   DialogueID: SampleID_3
   CharacterName: HubertPandecoco
-  CharacterEmotion: 
-  CharacterDialogue: What should I do...
+  CharacterEmotion: Base
+  CharacterDialogue: What should I do........
   options:
   - OptionText: Set
     connectingDialogueID: SampleID_1
+  - OptionText: Bump
+    connectingDialogueID: SampleID_2
+  - OptionText: Dive
+    connectingDialogueID: SampleID_4
   nextDialogueLine: 

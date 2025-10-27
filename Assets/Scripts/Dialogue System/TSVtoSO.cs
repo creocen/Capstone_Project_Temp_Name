@@ -68,7 +68,7 @@ public class TSVtoSO
         foreach (char c in Path.GetInvalidFileNameChars())
         {
             name = name.Replace(c.ToString(), "_");
-            
+
         }
         return name;
     }
