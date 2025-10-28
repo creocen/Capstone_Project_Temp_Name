@@ -368,12 +368,7 @@ MonoBehaviour:
   dialogueText: {fileID: 803728546}
   optionsPanel: {fileID: 1800630375}
   optionBTNPrefab: {fileID: 1689715112562244493, guid: 6ecf644d5c9d65d4aaf3b53e8310533a, type: 3}
-  dialogueList:
-  - {fileID: 11400000, guid: d2850c4d27ea95d4ea4eac2166ef57c1, type: 2}
-  - {fileID: 11400000, guid: ced3447b6d3394f46aa413510092f69f, type: 2}
-  - {fileID: 11400000, guid: 9a9b7a10fea89f54190bb488298fa0b6, type: 2}
-  - {fileID: 11400000, guid: 7bace4ce3c7cca84fa97f9c891e6184b, type: 2}
-  - {fileID: 11400000, guid: 2a82fe658596078469ba38b2670a7e2e, type: 2}
+  dialogueContainer: {fileID: 11400000, guid: f6eaef7b0f1502f478d6beb95f416088, type: 2}
   input: {fileID: 11400000, guid: 8f1dd9ea08fb04445a7382a4095f59bb, type: 2}
 --- !u!4 &679462161
 Transform:

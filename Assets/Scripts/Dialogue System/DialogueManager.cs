@@ -15,15 +15,17 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject optionBTNPrefab;
 
     [Header("Data References")]
-    [SerializeField] private List<DialogueSO> dialogueList;
+    //[SerializeField] private List<DialogueSO> dialogueList;
+    [SerializeField] private DialogueContainerSO dialogueContainer;
 
     [SerializeField] private InputReader input;
 
     private int currentIndex = 0;
     private bool hasChosen = false;
     private List<GameObject> activeOptionBTNS = new List<GameObject>();
+    private List<DialogueSO> dialogueList => dialogueContainer?.dialogueLines;
 
-    
+    // need to figure out how to acc do this lol
     void OnEnable() { input.Interact += OnInteract; }
     //void OnDisable() { input.Interact -= OnInteract; }
 
@@ -37,6 +39,19 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("TMP references not assigned in inspector! >:(");
             return;
         }
+
+        if (dialogueContainer == null)
+        {
+            Debug.LogWarning("Dialogue Container not assigned in inspector! >:(");
+            return;
+        }
+
+        if (dialogueList == null || dialogueList.Count == 0)
+        {
+            Debug.LogWarning("No dialogue lines found in the container!");
+            return;
+        }
+
 
         if (currentIndex >= dialogueList.Count)
         {
@@ -59,7 +74,8 @@ public class DialogueManager : MonoBehaviour
         if (currentDialogue.options != null && currentDialogue.options.Count > 0)
         {
             ShowDialogueOptions(currentDialogue.options);
-        } else
+        } 
+        else
         {
             HideOptions();
             NextDialogue(currentDialogue);
@@ -104,6 +120,10 @@ public class DialogueManager : MonoBehaviour
         {
             currentIndex = nextIndex;
             DisplayCurrentDialogue();
+        }
+        else
+        {
+            Debug.LogWarning($"Dialogue with ID '{connectingDialogueID}' not found in container!");
         }
     }
 
