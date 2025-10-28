@@ -13,9 +13,4 @@ MonoBehaviour:
   m_Name: DialogueContainer
   m_EditorClassIdentifier: Assembly-CSharp::DialogueContainerSO
   dialogueLines:
-  - {fileID: 11400000, guid: d2850c4d27ea95d4ea4eac2166ef57c1, type: 2}
-  - {fileID: 11400000, guid: ced3447b6d3394f46aa413510092f69f, type: 2}
-  - {fileID: 11400000, guid: 9a9b7a10fea89f54190bb488298fa0b6, type: 2}
-  - {fileID: 11400000, guid: 7bace4ce3c7cca84fa97f9c891e6184b, type: 2}
-  - {fileID: 11400000, guid: 2a82fe658596078469ba38b2670a7e2e, type: 2}
-  - {fileID: 11400000, guid: cd34dfc0a9ba4cf458a7c952a2b71633, type: 2}
+  - {fileID: 11400000, guid: fb567e34e605f7e4d9a828c933cf5eaa, type: 2}

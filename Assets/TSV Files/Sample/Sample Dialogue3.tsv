@@ -1,0 +1,5 @@
+DialogueID	CharacterName	CharacterEmotion	CharacterDialogue	Next Dialogue (ID)	Option Texts	Connects To ID
+SampleID_1	HubertPandesal	Happy	New dialogue line yip yip			
+SampleID_2	JobertPandecoco	Happy	test			
+SampleID_3	JobertPandecoco	Happy	Text made from unity		1|2	SampleID_1|SampleID_4
+SampleID_4	HubertPandesal	Happy	Text made from excel		yes|no	SampleID_2|SampleID_1
